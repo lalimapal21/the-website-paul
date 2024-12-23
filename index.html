@@ -1,0 +1,323 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f1f1;
+     
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            
+
+        }
+
+        header{
+            background-color: #faf4f4;
+            color: rgb(17, 10, 14);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: rgb(20, 16, 16);
+            text-decoration: none;
+            font-weight: bold;
+        }
+      /* HERO SECTION */
+        .hero {
+           text-align: center;
+           padding: 50px;
+           background: url('https://cdn.pixabay.com/photo/2016/11/17/09/28/hotel-1831072_640.jpg') no-repeat center center/cover;
+           color: white;
+           height: 400px;
+           
+           
+            
+        }
+        .home1:hover{
+           background-color: #ee6d7c;
+           font-size: 18px;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        .search-bar {
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .search-bar input {
+            padding: 10px;
+            margin: 5px;
+            font-size: 1em;
+            width: 300px;
+        }
+
+         .search-bar button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 1em;
+            width: 200px;
+            border-radius: 10px;
+            
+        }
+
+        .listings{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            
+        }
+
+        .listing {
+            background-color: rgb(245, 241, 241);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .listing img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .listing .info {
+            padding: 15px;
+        }
+
+        .listing .info h3 {
+            margin: 0 0 10px;
+        }
+
+        .listing .info p {
+            margin: 0;
+            color: #080404;
+        }
+        .info:hover{
+           background-color: #f6cfcf;
+           font-size: 20px;
+        }
+        button:hover{
+           color:rgb(248, 245, 245);
+           background-color: #080404;
+
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ff385c;
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: #ff385c;"><u>The Paul</u></h1>
+
+        <nav>
+            <ul >
+                <li class="home1"><a href="https://www.oyorooms.com/homestays-in-bangalore/">Home</a></li>
+                <li class="home1"><a href="https://www.google.com/travel/search?qs=OAA&ved=0CAAQ5JsGahcKEwjQhL_BnbSKAxUAAAAAHQAAAAAQBg">Explore</a></li>
+                <li class="home1"><a href="https://www.homestay.com/">Host</a></li>
+                <li class="home1"><a href="https://support.google.com/travel/?hl=en#topic=7687750">Help</a></li>
+            </ul>
+            
+        </nav>
+        
+    </header>
+
+    <div class="hero">
+       
+       
+        <h2>Find Your Next Stay</h2>
+        
+        <p>Explore unique homes and experiences around the world</p>
+
+    </div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search destinations...">
+        <button>Search</button>
+    </div>
+
+    <section class="listings">
+       <div class="listing">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNBNr0d2iIbU9JKxBCFxT1s3-dK2kzLc6Q1Q&s" alt="Listing">
+           <div class="info">
+               <h3><a href="https://www.airbnb.co.in/rooms/1309203209289236628?source_impression_id=p3_1734625149_P33v57d-3CJqsyW9">Cozy Apartment</a></h3>
+               <p><b><del>$1200</del> $120/night</b></p>
+               <br>
+               <p style="background-color: rgb(249, 252, 252);font-family: none"><i> An apartment is a private residence in a building or house that's divided into several separate dwellings. An apartment can be one small room or several. An apartment is a flat — it's usually a few rooms that you rent in a building.</i></p>
+           </div>
+       </div>
+
+       <div class="listing">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjMu4chZe3jjHdACjWe7NpYFzI99MxnXWwTg&s" alt="Listing">
+           <div class="info">
+               <h3><a href="https://www.stayvista.com/collections/beach-villas">Beachside Villa</a></h3>
+               <p><b><del>$2500</del> $250/night</b></p>
+               <br>
+               <p style="background-color: rgb(240, 242, 242);font-family: none"><i> 
+                   Beach villas are generally placed a few metres away from the beach itself, just beneath the swaying palm trees that fringed the white sands.The proximity to the beach means you're never too far away from exploring the reef, going on slow walks, or from accessing a range of water sports facilities.</i></p>
+           </div>
+       </div>
+
+       <div class="listing">
+           <img src="https://images.stockcake.com/public/4/b/5/4b54e1a5-7171-4b4c-846d-6126555a2708_large/luxurious-mountain-retreat-stockcake.jpg" alt="Listing">
+           <div class="info">
+               <h3><a href="https://www.hillcountry.co.in/mountain-retreat-ooty-resort/">Mountain Retreat</a></h3>
+               <p><b><del>$1800</del> $180/night</b></p>
+               <br>
+               <p style="background-color: rgb(246, 248, 249);font-family: none"><i>The Mountain Retreat is the realisation of a dream and the start of a great adventure.At the heart of the project is the idea that there is a way to live and work that seamlessly harmonises the irrepressible human instinct to work, learn and evolve, with the energy and rhythm of the natural world.</i></p>
+           </div>
+       </div>
+
+       <div class="listing">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzG_LYtgPn53KHzJ9YlRl_qU_xuWc5mzddGw&s" alt="Listing">
+           <div class="info">
+               <h3><a href="https://www.ppgpaints.com/color/color-families/neutrals/city-loft-grey">City Loft</a></h3>
+               <p><b><del>$1500</del> $150/night</b></p>
+               <br>
+               <p style="background-color: rgb(252, 252, 251);font-family: none"><i>People are happy where they feel peace and feel comfort.
+                   Cityloft is a place of happiness in different characteristics and located in different centers of the city.
+                   It has atmospheres that meet various needs and understanding of happiness.
+       </div>
+       </div>
+   </section>
+
+    <section class="listings">
+       <div class="listing">
+           <img src="https://octorate.com/wordpress/wp-content/uploads/2023/02/camera-deluxe-significato.webp" alt="Listing">
+           <div class="info">
+               <h3><a href="https://www.airbnb.co.in/rooms/1309203209289236628?source_impression_id=p3_1734625149_P33v57d-3CJqsyW9">Quadruple </a></h3>
+               <p><b><del>$2100</del> $210/night</b></p>
+               <br>
+               <p style="background-color: rgb(252, 252, 251);font-family: none"><i>People are happy where they feel peace and feel comfort.
+                   Cityloft is a place of happiness in different characteristics and located in different centers of the city.
+                   It has atmospheres that meet various needs and understanding of happiness.</i></p>
+           </div>
+       </div>
+
+       <div class="listing">
+           <img src="https://cdn.prod.website-files.com/5c6d6c45eaa55f57c6367749/65045f093c166fdddb4a94a5_x-65045f0266217.avif" alt="Listing">
+           <div class="info">
+               <h3><a href="https://www.stayvista.com/collections/beach-villas">Junior Suites</a></h3>
+               <p><b><del>$3500</del> $350/night</b></p>
+                <br>
+                <p style="background-color: rgb(252, 252, 251);font-family: none"><i>junior suite is a hotel room that has a sleeping area and a living area, but is smaller than a standard suite. Here are some things to expect in a junior.A junior suite is a hotel room that has a sleeping area and a living area, but is smaller than a standard suite. Here are some things to expect in a junior</i></p>
+       </div>
+           </div>
+   
+
+       <div class="listing">
+           <img src="https://vipluxuryservices.com/wp-content/uploads/interior_luxury_presidential_suite_park_hyatt_bangkok-1024x576.jpg" alt="Listing">
+           <div class="info">
+               <h3><a href="https://www.hillcountry.co.in/mountain-retreat-ooty-resort/">Deluxe Rooms</a></h3>
+               <p><b><del>$3800</del> $380/night</b></p>
+               <br>
+               <p style="background-color: rgb(248, 250, 250);font-family: none"><i>
+                   A deluxe room is a luxury type of hotel room with ample space, overlooking a beautiful panorama, and offering additional services such as a whirlpool tub.A deluxe room is a luxury type of hotel room with ample space, overlooking a beautiful panorama, and offering additional services such as a whirlpool tub.</i></p>
+           </div>
+       </div>
+
+       <div class="listing">
+           <img src="data:image/jpeg;base64,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" alt="Listing">
+           <div class="info">
+               <h3><a href="https://www.ppgpaints.com/color/color-families/neutrals/city-loft-grey">Presidential Suites</a></h3>
+               <p><b><del>$6500</del> $650/night</b></p>
+               <br>
+               <p style="background-color: rgb(248, 250, 250);font-family: none"><i>The centrepiece of this luxurious suite with 91 square metres interiors, is a large private terrace where you can experience private dining or entertain guests under the canopy of our centenarian raintree, with views over our lush gardens.</i></p>
+           </div>
+       </div>
+       <div class="listing">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvkmB5ZntKhpId7EowmWGa1mRQSkcRaN0dXg&s" alt="Listing">
+           <div class="info">
+               <h3><a href="https://www.stayvista.com/collections/beach-villas">King room</a></h3>
+               <p><b><del>$9500</del> $950/night</b></p>
+                <br>
+                <p style="background-color: rgb(252, 252, 251);font-family: none"><i>King hotel room. A room with a king-sized bed (generally 76 inches wide x 80 inches long, or 193 cm x 203 cm) which can be occupied by one or more people.</i></p>
+       </div>
+           </div>
+           <div class="listing">
+               <img src="data:image/jpeg;base64,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">
+               <div class="info">
+                   <h3><a href="https://www.stayvista.com/collections/beach-villas">Mini Suites</a></h3>
+                   <p><b><del>$3300</del> $330/night</b></p>
+                    <br>
+                    <p style="background-color: rgb(252, 252, 251);font-family: none"><i>Mini suite is a hotel room that has a sleeping area and a living area, but is smaller than a standard suite. Here are some things to expect in a junior.A junior suite is a hotel room that has a sleeping area and a living area, but is smaller than a standard suite. Here are some things to expect in a junior</i></p>
+           </div>
+               </div>
+               <div class="listing">
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuBaIDMw7MkuYeXLJ4ttmV4KxdpjWZBXAMgA&s" alt="Listing">
+                   <div class="info">
+                       <h3><a href="https://www.stayvista.com/collections/beach-villas">Executive Suites</a></h3>
+                       <p><b><del>$7500</del> $750/night</b></p>
+                        <br>
+                        <p style="background-color: rgb(252, 252, 251);font-family: none"><i>The Executive Suites (800 sqft) are impeccable in style and comfort with a living/dining room and 2 individual bedrooms, each vying with the other in terms of luxury and comfort and supported with spacious balconies, Wi-Fi, 2 line telephones, LED TVs in each bedroom and the living room and a well-stocked personal bar. The Executive Suites exude lavish comfort and is the perfect choice especially for familiesr</i></p>
+               </div>
+                   </div>
+                   <div class="listing">
+                       <img src="https://www.theleela.com/prod/content/assets/styles/tl_376_376_webp/public/2021-08/Royal%20Suite_3.jpeg.webp?VersionId=xkEfZGuqYEgo1OO7C25u9Fucx5h.mncq&itok=IWZfBMSw" alt="Listing">
+                       <div class="info">
+                           <h3><a href="https://www.stayvista.com/collections/beach-villas">Royal Suites</a></h3>
+                           <p><b><del>$5500</del> $520/night</b></p>
+                            <br>
+                            <p style="background-color: rgb(252, 252, 251);font-family: none"><i>Royal suite is a hotel room that has a sleeping area and a living area, but is smaller than a standard suite. Here are some things to expect in a junior.A junior suite is a hotel room that has a sleeping area and a living area, but is smaller than a standard suite. Here are some things to expect in a junior</i></p>
+                   </div>
+                       </div>
+               
+   </section>
+
+
+    <footer>
+        <p>© 2024 Airbnb Clone. Built for demo purposes. <a href="https://www.airbnb.com/privacy">Privacy</a> | <a href="https://www.airbnb.co.in/terms/old">Terms</a></p>
+        <a href="https://www.instagram.com/accounts/login/?hl=en"><img src="https://image.shutterstock.com/image-vector/camera-icon-photo-frame-on-260nw-1779908711.jpg" alt="" width="50px"></a>
+      <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyIiOiIiLCJteCI6IjIifQ%3D%3D%22%7D" ><img src="https://cdn-icons-png.flaticon.com/128/3256/3256013.png" width="50px"alt="" ></a>
+        <a href="https://www.facebook.com/login.php/"><img src="https://cdn-icons-png.flaticon.com/128/733/733547.png" width="50px"></a>
+    </footer>
+</body>
+</html>
